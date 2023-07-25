@@ -17,8 +17,8 @@ __all__ = [
 
 def build_ast_schema(
     document_ast: DocumentNode,
-    assume_valid: bool = False,
-    assume_valid_sdl: bool = False,
+    assume_valid: bool = True,
+    assume_valid_sdl: bool = True,
 ) -> GraphQLSchema:
     """Build a GraphQL Schema from a given AST.
 
